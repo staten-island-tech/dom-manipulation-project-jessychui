@@ -1,7 +1,18 @@
 const DOMSelectors = {
   button: document.getElementById("butt"),
   text: document.querySelector("#text"),
-  empty: document.querySelector(".nothing"),
+  box: document.getElementById("ahh"),
+  pointTwo: document.querySelectorAll(".point"),
 };
 
-console.log(DOMSelectors);
+console.log(DOMSelectors.pointTwo);
+
+function backgroundAndText(background, text) {
+  background.style.backgroundColor = "red";
+  text.textContent = "red ahh big";
+  text.style.fontSize = "40px";
+}
+
+DOMSelectors.button.addEventListener("click", function () {
+  backgroundAndText(DOMSelectors.box, DOMSelectors.text);
+});
