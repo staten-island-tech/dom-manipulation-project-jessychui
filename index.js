@@ -1,18 +1,14 @@
 const DOMSelectors = {
-  button: document.getElementById("butt"),
-  text: document.querySelector("#text"),
-  box: document.getElementById("ahh"),
-  pointTwo: document.querySelectorAll(".point"),
+  button: document.getElementById("btn"),
+  box: document.getElementById("container"),
+  input: document.querySelector("#input"),
 };
 
-console.log(DOMSelectors.pointTwo);
-
-function backgroundAndText(background, text) {
-  background.style.backgroundColor = "red";
-  text.textContent = "red ahh big";
-  text.style.fontSize = "40px";
-}
+/* const cat = "meow";
+DOMSelectors.box.insertAdjacentHTML("after", `<h1>We are an H1 ${cat} </h1>`);
+ */
 
 DOMSelectors.button.addEventListener("click", function () {
-  backgroundAndText(DOMSelectors.box, DOMSelectors.text);
+  let input = DOMSelectors.input.value;
+  DOMSelectors.box.insertAdjacentHTML("beforeend", `${input}`);
 });
