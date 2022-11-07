@@ -1,3 +1,18 @@
+body {
+    background-color: rgb(229, 229, 246);
+    
+}
+
+#container {
+    font-size: 20px;
+    font-family: 'Lilita One', cursive;
+    color:rgb(88, 94, 162);
+    text-align: center;
+    
+}
+
 button {
-    background-color: rgb(184, 123, 123);
+    font-family: 'Nanum Gothic', sans-serif;
+    color: rgb(24, 10, 107);
+    background-color: aliceblue;
 }
