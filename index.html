@@ -17,11 +17,20 @@
     <body>
         <div id="container">
             <p id="text">↓ cats here ↓</p>
-            <input type="text" id="input"/>
+<!--             <input type="text" id="input"/>
+ -->        <form>
+            <select id = "catlist" onchange = "dropdownlist()" >
+            <option> ---Choose cat--- </option>
+            <option> ragdoll </option>
+            <option> bengal </option>
+            <option> siamese </option>
+            <option> maine coon </option>
+            </select> 
             <button type="button" id="btn">enter</button>
+        </form>
         </div>  
 
-        <div class="cat-box">
+        <!-- <div class="cat-box">
             <h1 class="cat-name">Ragdoll</h1>
             <img src="ragdoll.jpg" alt="ragdoll cat">
             <p> size: large
@@ -30,7 +39,9 @@
                 <br>
                 maintenance: high
             </p>
-        </div>
+        </div> -->
+
+        
 
         <script src="index.js"></script>
     </body>

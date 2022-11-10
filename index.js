@@ -5,10 +5,8 @@ const DOMSelectors = {
   cat: document.querySelector("cat-box"),
 };
 
-DOMSelectors.button.addEventListener("click", function () {
-  let input = DOMSelectors.input.value;
-  DOMSelectors.box.insertAdjacentHTML("afterend", DOMSelectors.cat);
-  DOMSelectors.input.value = "";
-});
-
-function catinsert(catholder, deletebutton) {}
+function favTutorial() {
+  var mylist = document.getElementById("myList");
+  document.getElementById("dropdownlist").value =
+    mylist.options[mylist.selectedIndex].text;
+}
