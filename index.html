@@ -15,20 +15,18 @@
 
     </head>
     <body>
-        <div id="container">
-            <p id="text">↓ cats here ↓</p>
-<!--             <input type="text" id="input"/>
- -->        <form>
-            <select id = "catlist" onchange = "dropdownlist()" >
-            <option> ---Choose cat--- </option>
-            <option> ragdoll </option>
-            <option> bengal </option>
-            <option> siamese </option>
-            <option> maine coon </option>
-            </select> 
-            <button type="button" id="btn">enter</button>
+
+        <section id="container">
+            <h1 id="header">↓ cats here ↓</h1>
+                <form id="form">
+                    <div class="form-inputs">
+                        <div class="form-input"></div>
+                    </div>
+
+            <input type="text" id="input"> 
+            <button type="button" id="enter-button">enter</button>
         </form>
-        </div>  
+        </section>  
 
         <!-- <div class="cat-box">
             <h1 class="cat-name">Ragdoll</h1>
@@ -41,6 +39,15 @@
             </p>
         </div> -->
 
+        <section class="cat-box" id="cat-box">
+            <div class="display-card">
+            <h2 class="cat-box-name">Ragdoll</h2>
+            <img class="display-img" src="ragdoll.jpg"/>
+            <p class="cat-box-size">large</p>
+            <p class="cat-box-maintenance">high</p>
+            <button id="remove-btn">Remove Cat :-(</button>
+            </div>
+        </section>
         
 
         <script src="index.js"></script>

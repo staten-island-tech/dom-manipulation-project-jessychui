@@ -1,12 +1,11 @@
 const DOMSelectors = {
-  button: document.getElementById("btn"),
+  button: document.getElementById("enter-button"),
   box: document.getElementById("container"),
   input: document.querySelector("#input"),
   cat: document.querySelector("cat-box"),
 };
 
-function favTutorial() {
-  var mylist = document.getElementById("myList");
-  document.getElementById("dropdownlist").value =
-    mylist.options[mylist.selectedIndex].text;
-}
+DOMSelectors.button.addEventListener("click", function () {
+  let input = DOMSelectors.input.value;
+  DOMSelectors.box.insertAdjacentHTML("afterend", DOMSelectors.cat);
+});
