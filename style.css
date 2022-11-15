@@ -8,10 +8,16 @@ body {
     font-family: 'Lilita One', cursive;
     color:rgb(88, 94, 162);
     text-align: center;
+    background-color: #f0a2a2;
+    
 }
 
 h1 {
     margin-bottom: 10px;
+}
+
+label {
+    font-size: 20px;
 }
 
 #enter-button {
@@ -32,15 +38,22 @@ h1 {
     text-align: center;
     color: rgb(61, 74, 117);
     line-height: 10px;
-    font-size: 120%;
+    font-size: 25px;
     border-radius: 10px;
     box-sizing: border-box;
     box-shadow: 15px 17px rgb(111, 118, 172);
     background-color: rgb(199, 202, 227);
+    
+}
+
+.cat-box-personality {
+    margin: 15px;
+    font-size: 22.5px;
 }
 
 #remove-btn {
-    background-color: #d3d3d3;
-    border-radius: 5px;
+    background-color: #fac5c5;
+    border-radius: 7px;
     padding: 4px;
 }
+

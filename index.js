@@ -5,7 +5,8 @@ const DOMSelectors = {
   cat: document.querySelector("cat-box"),
 };
 
-DOMSelectors.button.addEventListener("click", function () {
-  let input = DOMSelectors.input.value;
-  DOMSelectors.box.insertAdjacentHTML("afterend", DOMSelectors.cat);
+function makeCard() {}
+
+Document.getElementById("form").addEventListener("submit", function (e) {
+  e.preventDefault();
 });

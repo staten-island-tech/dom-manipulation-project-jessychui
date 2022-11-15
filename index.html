@@ -20,36 +20,36 @@
             <h1 id="header">↓ cats here ↓</h1>
                 <form id="form">
                     <div class="form-inputs">
-                        <div class="form-input"></div>
+                        <div class="form-input">
+                            <label for="name">name</label>
+                            <input type="text" id="cat-name" class="text-box" required>
+                        </div>
+                        <div class="form-input">
+                            <label for="personality">cat personality</label>
+                            <input type="text" id="cat-personality" class="text-box" required>
+                        </div>
+                        <div class="form-input">
+                            <label for="url">cat pic url</label>
+                            <input type="text" id="url" class="text-box" required>
+                        </div>
                     </div>
 
-            <input type="text" id="input"> 
-            <button type="button" id="enter-button">enter</button>
+                <div class="form-submit">
+                    <input type="submit" value="enter" id="enter-button">
+                </div>
         </form>
         </section>  
-
-        <!-- <div class="cat-box">
-            <h1 class="cat-name">Ragdoll</h1>
-            <img src="ragdoll.jpg" alt="ragdoll cat">
-            <p> size: large
-                <br>
-                lifespan: 12-17 years
-                <br>
-                maintenance: high
-            </p>
-        </div> -->
 
         <section class="cat-box" id="cat-box">
             <div class="display-card">
             <h2 class="cat-box-name">Ragdoll</h2>
-            <img class="display-img" src="ragdoll.jpg"/>
-            <p class="cat-box-size">large</p>
-            <p class="cat-box-maintenance">high</p>
+            <img class="display-cat" src="ragdoll.jpg"/>
+            <p class="cat-box-personality">excited</p>
             <button id="remove-btn">Remove Cat :-(</button>
             </div>
         </section>
         
 
-        <script src="index.js"></script>
+        <script src="index.js" type="module"></script>
     </body>
 </html>
