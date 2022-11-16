@@ -8,7 +8,11 @@ body {
     font-family: 'Lilita One', cursive;
     color:rgb(88, 94, 162);
     text-align: center;
-    background-color: #f0a2a2;
+    background-color: rgb(240, 162, 162);
+    border-radius: 10px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 10px 10px rgb(159, 96, 96);
     
 }
 
@@ -24,6 +28,7 @@ label {
     font-family: 'Nanum Gothic', sans-serif;
     color: rgb(24, 10, 107);
     background-color: aliceblue;
+    margin-bottom: 8px;
 }
 
 
