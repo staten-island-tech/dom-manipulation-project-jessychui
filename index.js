@@ -4,7 +4,6 @@ const DOMSelectors = {
   nameinput: document.querySelector("#cat-name"),
   urlinput: document.querySelector("#url"),
   personalityinput: document.querySelector("#cat-personality"),
-  delete: document.getElementById("#remove-btn"),
   form: document.getElementById("form"),
 };
 
@@ -19,10 +18,15 @@ DOMSelectors.form.addEventListener("submit", function (e) {
     `<section class="cat-box" id="cat-box">
   <div class="display-card">
   <h2 class="cat-box-name">${nameinput}</h2>
-  <img class="display-cat" src="${urlinput}"/>
+  <img id="e" class="display-cat" src="${urlinput}"/>
   <p class="cat-box-personality">${personalityinput}</p>
   <button id="remove-btn">Remove Cat :-(</button>
   </div> 
 </section>`
   );
+  const element = document.getElementById("cat-box");
+  const remove = document.getElementById("remove-btn");
+  remove.addEventListener("click", function () {
+    element.remove();
+  });
 });
