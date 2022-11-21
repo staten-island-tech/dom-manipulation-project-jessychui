@@ -7,12 +7,12 @@ const DOMSelectors = {
   form: document.getElementById("form"),
 };
 
-let nameinput = DOMSelectors.nameinput.value;
-let urlinput = DOMSelectors.urlinput.value;
-let personalityinput = DOMSelectors.personalityinput.value;
-
 DOMSelectors.form.addEventListener("submit", function (e) {
   e.preventDefault();
+  let nameinput = DOMSelectors.nameinput.value;
+  let urlinput = DOMSelectors.urlinput.value;
+  let personalityinput = DOMSelectors.personalityinput.value;
+
   DOMSelectors.box.insertAdjacentHTML(
     "afterend",
     `<section class="cat-box" id="cat-box">
