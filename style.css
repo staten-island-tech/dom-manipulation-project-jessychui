@@ -12,7 +12,12 @@ body {
     width: 500px;
     box-shadow: 10px 10px rgb(159, 96, 96);
     margin: auto;
+    transition: .5s;
 }
+#container:hover {
+    text-shadow: 0 0 0.7rem rgba(214, 214, 255, 0.831);
+}
+ 
 
 h1 {
     margin-bottom: 10px;
@@ -49,6 +54,12 @@ label {
     margin-top: 4%;
     margin-left: 10%;
     margin-bottom: auto;
+    transition: .5s;
+}
+
+.cat-box:hover {
+    transform: scale(1.1);
+    box-shadow: 1.2rem 1.2rem 0.1rem 0.1rem rgba(37, 34, 71, 0.543);
 }
 img {
     width: 70%;
