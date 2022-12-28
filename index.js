@@ -7,7 +7,7 @@ const DOMSelectors = {
   form: document.getElementById("form"),
 };
 
-function clear (
+function clear(
  DOMSelectors.nameinput = "";
  DOMSelectors.urlinput = "";
  DOMSelectors.personalityinput = "";
