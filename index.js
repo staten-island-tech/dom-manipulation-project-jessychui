@@ -7,6 +7,12 @@ const DOMSelectors = {
   form: document.getElementById("form"),
 };
 
+function clear (
+ DOMSelectors.nameinput = "";
+ DOMSelectors.urlinput = "";
+ DOMSelectors.personalityinput = "";
+)
+
 DOMSelectors.form.addEventListener("submit", function (e) {
   e.preventDefault();
   let nameinput = DOMSelectors.nameinput.value;
@@ -24,9 +30,13 @@ DOMSelectors.form.addEventListener("submit", function (e) {
   </div> 
 </section>`
   );
+
+
   const element = document.getElementById("cat-box");
   const remove = document.getElementById("remove-btn");
   remove.addEventListener("click", function () {
     element.remove();
   });
+
+ clear()
 });
